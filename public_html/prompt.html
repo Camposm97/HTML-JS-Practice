@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		body {
+			background-color: lightblue;
+			text-align: left;
+		}
+	</style>
+	<title>Prompt.html</title>
+	<!--<head>HELLO WORLD</head>-->
+	<body>
+		<a href="sample.html">Go Back</a><br><br>
+		<form>
+			First Name:
+			<input id="tfFirstName" type="text" name="firstName" maxLength="24"></input>
+			<button type="button" width="200px" onclick="submit()">Submit</button>
+			<br>
+			<p id="text1"></p>
+			<br>
+			<button width="100px" type="button" onclick="clear()">Clear</button>
+		</form>
+	</body>
+	
+	<script>
+		function clear() {
+			var v1 = document.getElementById("text1");
+			v1.innerHTML = " " + v1.innerHTML; // Clear text1 (<p>)
+			console.log("Cleared text1");
+		}                 
+	
+		function submit() {
+			var v1 =  document.getElementById("text1");
+			console.log("User clicked submit button");
+			v1.innerHTML = "Hello World!" + " " + v1.innerHTML;
+		}
+	</script>
+	
+</html>
