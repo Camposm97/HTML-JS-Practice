@@ -12,6 +12,6 @@ function myFunction() {
 	console.log("I've been clicked");
 }
 
-function functionZ(var name) {
+function functionZ(name) {
 	console.log("name = " + name);
 }

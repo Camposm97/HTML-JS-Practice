@@ -9,5 +9,5 @@ function functionX() {
 }
 
 function functionZ() {
-	
+	console.log("Via functionZ");
 }
