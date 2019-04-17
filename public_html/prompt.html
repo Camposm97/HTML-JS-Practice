@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <style>
         body {
@@ -5,11 +6,11 @@
             text-align: left;
         }
     </style>
-    <title>Prompt.html</title>
+    <title>Prompt Page</title>
     <!--<head>HELLO WORLD</head>-->
     <body>
         <a href="index.html">Go Back</a><br><br>
-
+        <script src="promptScript.js"></script>
         First Name:
         <input id="tfFirstName" type="text" name="firstName" maxLength="24"/>
         <button type="button" onclick="submit()">Submit</button>
@@ -17,18 +18,5 @@
         <p id="text1"></p>
         <br>
         <button type="button" onclick="clear()">Clear</button>
-        <script>
-            function clear() {
-                var v1 = document.getElementById("text1");
-                v1.innerHTML = " " + v1.innerHTML; // Clear text1 (<p>)
-                console.log("Cleared text1");
-            }
-
-            function submit() {
-                var v1 = document.getElementById("text1");
-                console.log("User clicked submit button");
-                v1.innerHTML = "Hello World!" + " " + v1.innerHTML;
-            }
-        </script>
     </body>
 </html>
