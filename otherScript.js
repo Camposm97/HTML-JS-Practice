@@ -1,3 +1,3 @@
 function displayAlert() {
-  alert("Boo");
+  alert("I am Easter Egg :)");
 }
